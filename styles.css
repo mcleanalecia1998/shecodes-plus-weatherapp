@@ -40,6 +40,54 @@ background-color: #f7f3ff;
     color: white;
 } 
 
+main {
+    padding: 30px 0;
+}
+
+.weather-city {
+margin: 0;
+font-size: 38px;
+font-weight: 700;
+line-height: 48px;
+}
+
+.weather-details {
+font-size: 14px;
+line-height: 20px;
+color: rgba(39, 33, 66, 0.4);
+font-weight: 500;
+}
+
+.weather-details strong {
+    color: lightpink;
+}
+
+.weather-data {
+    display: flex;
+    justify-content: space-between;
+}
+
+.weather-temperature-container {
+    display: flex;
+}
+
+.temperature-value {
+    font-size: 88px;
+    font-weight: bold; 
+    margin-left: 10px;
+}
+
+.temperature-icon {
+    font-size: 44px;
+    margin-top: 22px;
+   
+}
+
+.temperature-unit {
+margin-top: 20px ;
+font-size: 28px;
+}
+
 footer {
 border-top: 1px solid #f7f3ff;
     padding: 30px 0 0 0;
