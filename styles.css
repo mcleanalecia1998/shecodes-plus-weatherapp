@@ -78,14 +78,15 @@ font-weight: 500;
 }
 
 .temperature-icon {
-    font-size: 44px;
-    margin-top: 22px;
+    width: 88px;
+    height: 88px;
+    
    
 }
 
 .temperature-unit {
-margin-top: 20px ;
-font-size: 28px;
+margin-top: 8px ;
+font-size: 30px;
 }
 
 footer {
