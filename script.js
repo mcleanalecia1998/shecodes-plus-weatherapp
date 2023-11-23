@@ -5,7 +5,6 @@ function updateWeatherApp(response) {
   let descriptionElement = document.querySelector("#description");
   let humidityElement = document.querySelector("#humidity");
   let windElement = document.querySelector("#wind");
-
   let timeElement = document.querySelector("#time");
   let date = new Date(response.data.time * 1000);
 
@@ -44,7 +43,7 @@ function formatDate(date) {
   hours = hours % 12;
   hours = hours ? hours : 12;
 
-  return `${day} ${hours}:${minutes} ${amOrPm}`;
+  return `Last updated: ${day} ${hours}:${minutes} ${amOrPm}`;
 }
 
 function searchCity(city) {
