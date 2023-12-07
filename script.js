@@ -60,22 +60,28 @@ function handleSearchSubmit(event) {
   searchCity(searchInput.value);
 }
 
-let searchFormElement = document.querySelector("#search-form");
-searchFormElement.addEventListener("submit", handleSearchSubmit);
+function displayForecast() {
+  let forecast = document.querySelector("#forecast");
 
-searchCity("Falls Church");
+  let days = ["Tue", "Wed", "Thu", "Fri", "Sat"];
 
-let forecast = document.querySelector("#forecast");
-
-forecast.innerHTML = `
+  days.forEach(function (day) {
+    forecast.innerHTML = `
   <div class="weather-forecast">
     <div class="weather-forecast-day">
-      <div class="weather-forecast-date">Thursday </div>
+      <div class="weather-forecast-date">${day} </div>
       <div class="weather-forecast-icon"> 🌤 </div>
       <div class="weather-forecast-temperature">
-      
-        <span class="weather-forecast-temperature-max">18⁰ </span>
+        <span class="weather-forecast-temperature-max"> <strong> 18⁰ </strong> </span>
         <span class="weather-forecast-temperature-min">12⁰</span>
       </div>
     </div>
   </div> `;
+  });
+}
+
+let searchFormElement = document.querySelector("#search-form");
+searchFormElement.addEventListener("submit", handleSearchSubmit);
+
+searchCity("Falls Church");
+displayForecast();
