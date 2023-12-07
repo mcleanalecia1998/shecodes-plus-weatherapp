@@ -10,8 +10,8 @@ a {
     background-color: white;
     max-width: 600px;
     margin: 45px auto;
-    box-shadow: 0 30px 50px rgba(65, 50, 100, .08);
-    border-radius: 20px;
+    box-shadow: 0 30px 50px rgba(65, 50, 100, 0.08);
+    border-radius: 16px;
     padding: 30px;
    
 }
@@ -23,10 +23,10 @@ header {
 .search-input {
 background-color: #f7f3ff;
     border: none;
-    border-radius: 8px;
+    border-radius: 6px;
     width: 80%;
     font-size: 16px;
-    padding: 14px 18px;
+    padding: 15px 20px;
 
 }
 
