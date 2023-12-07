@@ -64,3 +64,18 @@ let searchFormElement = document.querySelector("#search-form");
 searchFormElement.addEventListener("submit", handleSearchSubmit);
 
 searchCity("Falls Church");
+
+let forecast = document.querySelector("#forecast");
+
+forecast.innerHTML = `
+  <div class="weather-forecast">
+    <div class="weather-forecast-day">
+      <div class="weather-forecast-date">Thursday </div>
+      <div class="weather-forecast-icon"> 🌤 </div>
+      <div class="weather-forecast-temperature">
+      
+        <span class="weather-forecast-temperature-max">18⁰ </span>
+        <span class="weather-forecast-temperature-min">12⁰</span>
+      </div>
+    </div>
+  </div> `;
