@@ -72,28 +72,28 @@ font-weight: 500;
     display: flex;
 }
 
-.temperature-value {
-    font-size: 88px;
-    font-weight: bold; 
-    margin-left: 10px;
-}
-
 .temperature-icon {
     width: 88px;
     height: 88px;
 }
 
+.temperature-value {
+    font-size: 88px;
+    line-height: 88px;
+    font-weight: bold; 
+    
+   
+}
+
 .temperature-unit {
-margin-top: 8px ;
-position: relative;
-font-size: 30px;
+margin-top: 6px ;
+font-size: 20px;
 }
 
 .weather-forecast {
     display: flex;
     justify-content: space-around;
-    margin-top: 20px;
-    text-align: center;
+    margin-top: 30px;
     
 }
 .weather-forecast-date {
