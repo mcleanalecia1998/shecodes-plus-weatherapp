@@ -108,11 +108,16 @@ font-size: 20px;
 .weather-forecast-temperature {
     font-size: 13px;
     color: lightpink;
-}
+    margin: 0 10px; }
 
-.weather-forecast-temperature-min {
-    opacity: 0.5;
-}
+    .weather-forecast-icon {
+        width: 88px;
+        height: 88px;
+        display: block; 
+        margin: 0 auto; 
+      }
+
+
 
 footer {
 border-top: 1px solid #f7f3ff;
