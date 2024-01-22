@@ -65,6 +65,9 @@ function handleSearchSubmit(event) {
 function formatDay(timestamp) {
   let date = new Date(timestamp * 1000);
   let days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+  let amOrPm = hours >= 12 ? "pm" : "am";
+  hours = hours % 12;
+  hours = hours ? hours : 12;
 
   return days[date.getDay()];
 }
